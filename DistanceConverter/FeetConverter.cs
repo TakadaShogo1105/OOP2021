@@ -8,12 +8,14 @@ namespace DistanceConverter {
 
     public static class FeetConverter {
 
+        private const double ratio = 0.3048;
+
         static public double FromMeter(double meter) {
-            return meter / 0.38048;
+            return meter / ratio;
         }
 
         static public double ToMeter(double feet) {
-            return feet * 0.3048;
+            return feet * ratio;
         }
     }
 }
