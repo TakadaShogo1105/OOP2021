@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,26 @@ namespace SalesCalculator {
 
         private List<Sale> _sales;
 
-        public SalesCounter(List<Sale> sales) {
-            _sales = sales;
+        public SalesCounter(string filePath) {
+            _sales = ReadSales(filePath);
 
+        }
+
+        //リスト2-15
+
+        private static List<Sale> ReadSales(string filePath) {
+            List<Sale> sales = new List<Sale>();
+            string[] lines = File.ReadAllLines(filePath);
+            foreach (string line in lines) {
+                string[] items = line.Split(',');
+                Sale sale = new Sale {
+                    ShopName = items[0],
+                    ProductCategory = items[1],
+                    Amount = int.Parse(items[2])
+                };
+                sales.Add(sale);
+            }
+            return sales;
         }
 
         //店舗別売上を求める
