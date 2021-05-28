@@ -12,12 +12,10 @@ namespace SalesCalculator {
 
             var sales = new SalesCounter( "Sales.csv" );
 
-            Dictionary<string,int> amountPerStore = sales.GetPerStoreSales();
-            foreach (KeyValuePair<string,int> obj in amountPerStore) {
+            var amountPerStore = sales.GetPerStoreSales();
+            foreach (var obj in amountPerStore) {
                 Console.WriteLine("{0}{1}",obj.Key,obj.Value);
             }
-
         }
-       
     }
 }
