@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Section01\Section01.csproj">
+      <Project>{436082ec-4ead-4913-9586-c5a3e2f99ffe}</Project>
+      <Name>Section01</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Exercise1\Exercise1.csproj">
       <Project>{898a3ddc-33a6-4293-86f4-b0778f947fd6}</Project>
       <Name>Exercise1</Name>

@@ -24,15 +24,15 @@ namespace Section01 {
 
         
 
-        private static Product GetProductA() {
-            Sale sale = new Sale();
-            return sale?.Product; //null条件演算子
-        }
+        //private static Product GetProductA() {
+        //    Sale sale = new Sale();
+        //    return sale?.Product; //null条件演算子
+        //}
     }
-        class Sale {
-        public string ShopName { get; set; } = "abcde";
-        public int Amount { get; set; } = 12340;
-            public Product Product { get; set; }
+        //class Sale {
+        //public string ShopName { get; set; } = "abcde";
+        //public int Amount { get; set; } = 12340;
+        //    public Product Product { get; set; }
 
-        }
-}
+        //}
+

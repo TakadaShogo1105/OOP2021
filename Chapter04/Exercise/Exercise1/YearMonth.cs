@@ -12,7 +12,7 @@ namespace Exercise1 {
 
         public int Month { get; private set; }
 
-        YearMonth(int year,int month) {
+        public YearMonth(int year,int month) {
             Year = year;
             Month = month;
         }
@@ -20,6 +20,7 @@ namespace Exercise1 {
         public YearMonth() {
         }
 
+        //4.1.2
         public bool Is21Century {
             get { return Year >= 2001 && Year <= 2100; }
         }
