@@ -55,8 +55,6 @@ namespace Test02 {
         //　　　　出力結果【12 14 17 20 31 35 40 48 53 76 87 91 94】
         private static void Exercise03(List<int> numbers) {
 
-            
-
         }
 
         //問題４　10以上50以下の数字のみを表示（即時実行でも可とする）
