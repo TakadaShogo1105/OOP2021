@@ -5,37 +5,45 @@ namespace Test01 {
     class ScoreCounter {
         private IEnumerable<Student> _score;
 
-        public string Name { get; set; }
-        public string Subject { get; set; }
-        public int Score { get; set; }
-
         // コンストラクタ
-        public ScoreCounter(string name,string subject,int score) {
+        public ScoreCounter(string filePath) {
 
-            this.Name = name;
-            this.Subject = subject;
-            this.Score = score;
+            _score = ReadScore(filePath);
+
         }
 
 
-        //メソッドの概要： 一人一人の英語の点数を読み込む
+        //メソッドの概要： 
         private static IEnumerable<Student> ReadScore(string filePath) {
 
-
-
-
-
-            
+            List<Student> sales = new List<Student>();
+            string[] lines = File.ReadAllLines(filePath);
+            foreach (string line in lines) {
+                string[] items = line.Split(',');
+                Student sale = new Student {
+                    Name = items[0],
+                    Subject = items[1],
+                    Score = int.Parse(items[2])
+                };
+                sales.Add(sale);
+            }
+            return sales;
         }
 
-        //メソッドの概要： 一人一人の英語の点数を出力
+        //メソッドの概要： 
         public IDictionary<string, int> GetPerStudentScore() {
 
+            var dict = new Dictionary<string, int>();
+            foreach (var student in _score) {
+                if (dict.ContainsKey(student.Subject))
+
+                    dict[student.Subject] += student.Score;
+                else
+                    dict[student.Subject] = student.Score;
+            }
+            return dict;
 
 
-
-
-            
         }
     }
 }

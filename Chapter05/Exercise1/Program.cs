@@ -27,7 +27,11 @@ namespace Exercise1 {
             int num1 = int.Parse(Console.ReadLine());
             var n1 = num1.ToString("#,0");
             Console.WriteLine(n1);
-            #endregion 
+            #endregion
+
+            #region 問題5.3
+            String long = "Jackdaws Love my big sphinx of quartz";
+
         }
     }
 }
