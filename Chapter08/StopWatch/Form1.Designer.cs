@@ -29,6 +29,7 @@ namespace StopWatch {
             this.button3 = new System.Windows.Forms.Button();
             this.buttonStart_Click = new System.Windows.Forms.Button();
             this.LB = new System.Windows.Forms.TextBox();
+            this.Rapbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonReset_Click
@@ -62,6 +63,7 @@ namespace StopWatch {
             this.button3.TabIndex = 4;
             this.button3.Text = "ラップ⇒";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // buttonStart_Click
             // 
@@ -80,14 +82,24 @@ namespace StopWatch {
             this.LB.Multiline = true;
             this.LB.Name = "LB";
             this.LB.ReadOnly = true;
-            this.LB.Size = new System.Drawing.Size(232, 51);
+            this.LB.Size = new System.Drawing.Size(278, 51);
             this.LB.TabIndex = 6;
+            // 
+            // Rapbox
+            // 
+            this.Rapbox.Location = new System.Drawing.Point(370, 119);
+            this.Rapbox.Multiline = true;
+            this.Rapbox.Name = "Rapbox";
+            this.Rapbox.ReadOnly = true;
+            this.Rapbox.Size = new System.Drawing.Size(278, 264);
+            this.Rapbox.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Rapbox);
             this.Controls.Add(this.LB);
             this.Controls.Add(this.buttonStart_Click);
             this.Controls.Add(this.button3);
@@ -108,6 +120,7 @@ namespace StopWatch {
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonStart_Click;
         private System.Windows.Forms.TextBox LB;
+        private System.Windows.Forms.TextBox Rapbox;
     }
 }
 
