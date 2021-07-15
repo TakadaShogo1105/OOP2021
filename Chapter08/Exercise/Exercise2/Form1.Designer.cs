@@ -317,6 +317,7 @@ namespace Exercise2 {
             this.btOpen.TabIndex = 19;
             this.btOpen.Text = "開く...";
             this.btOpen.UseVisualStyleBackColor = true;
+            this.btOpen.Click += new System.EventHandler(this.btOpen_Click);
             // 
             // btSave
             // 
@@ -326,6 +327,7 @@ namespace Exercise2 {
             this.btSave.TabIndex = 20;
             this.btSave.Text = "保存...";
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btExit
             // 

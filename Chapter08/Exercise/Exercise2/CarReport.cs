@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Exercise2 {
+
+    [Serializable]
+
     public class CarReport {
 
         public DateTime Date { get; set; }//日付

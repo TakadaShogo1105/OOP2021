@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -142,7 +144,34 @@ namespace Exercise2 {
 
         private void btDateCorrect_Click(object sender, EventArgs e) {
             listcarReports[dgvRegistDate.CurrentRow.Index].UpDate(dtpDate.Value,cbAuthor.Text,selectedGroup(),cbCarName.Text,tbReport.Text,pbPicture.Image);
+            
+            dgvRegistDate.Refresh(); //コントロールの強制再描画
 
+            
+        }
+
+        private void btSave_Click(object sender, EventArgs e) {
+            if (sfdFileSave.ShowDialog()==DialogResult.OK) {
+                var bf = new BinaryFormatter();
+
+                using (FileStream fs = File.Open(sfdFileSave.FileName,FileMode.Create)) {
+                    bf.Serialize(fs, listcarReports);
+                }
+
+            }
+        }
+
+        private void btOpen_Click(object sender, EventArgs e) {
+            if (ofdFireOpen.ShowDialog()==DialogResult.OK) {
+                //バイナリ形式で逆シリアル化
+                var bf = new BinaryFormatter();
+                using (FileStream fs = File.Open(ofdFireOpen.FileName,FileMode.Open,FileAccess.Read)) {
+                    //逆シリアル化して読み込む
+                    listcarReports = (BindingList<CarReport>) bf.Deserialize(fs);
+                    dgvRegistDate.DataSource = null;
+                    dgvRegistDate.DataSource = listcarReports;
+                }
+            }
         }
     }
 }
