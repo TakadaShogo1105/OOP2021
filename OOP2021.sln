@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Chapter08\Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopWatch", "Chapter08\StopWatch\StopWatch.csproj", "{5944D14A-1C2A-4BEF-BA46-A3EEBFF28E67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2", "Chapter08\Exercise\Exercise2\Exercise2.csproj", "{0CA2776E-5E01-4407-9E8F-D389DD315EB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{5944D14A-1C2A-4BEF-BA46-A3EEBFF28E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5944D14A-1C2A-4BEF-BA46-A3EEBFF28E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5944D14A-1C2A-4BEF-BA46-A3EEBFF28E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CA2776E-5E01-4407-9E8F-D389DD315EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA2776E-5E01-4407-9E8F-D389DD315EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA2776E-5E01-4407-9E8F-D389DD315EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA2776E-5E01-4407-9E8F-D389DD315EB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,6 +199,7 @@ Global
 		{AF14F6B3-2F2A-4104-A442-C564C72392AA} = {D01788CB-364A-4928-A244-062D59E8D4FF}
 		{782016A6-B119-4AE5-B350-637D82FEDEE8} = {AF14F6B3-2F2A-4104-A442-C564C72392AA}
 		{5944D14A-1C2A-4BEF-BA46-A3EEBFF28E67} = {D01788CB-364A-4928-A244-062D59E8D4FF}
+		{0CA2776E-5E01-4407-9E8F-D389DD315EB7} = {AF14F6B3-2F2A-4104-A442-C564C72392AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30F321BF-1C98-4CD6-B1ED-E7FC5730015B}

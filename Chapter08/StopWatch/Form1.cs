@@ -50,6 +50,8 @@ namespace StopWatch {
         //ラップ
         private void button3_Click(object sender, EventArgs e) {
             Rapbox.Text = LB.Text + "\r\n" + Rapbox.Text;
+       
+        
         }
     }
 }
