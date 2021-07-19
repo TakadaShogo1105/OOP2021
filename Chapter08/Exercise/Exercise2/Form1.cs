@@ -153,9 +153,12 @@ namespace Exercise2 {
         private void btSave_Click(object sender, EventArgs e) {
             if (sfdFileSave.ShowDialog()==DialogResult.OK) {
                 var bf = new BinaryFormatter();
-
-                using (FileStream fs = File.Open(sfdFileSave.FileName,FileMode.Create)) {
-                    bf.Serialize(fs, listcarReports);
+                try {
+                    using (FileStream fs = File.Open(sfdFileSave.FileName, FileMode.Create)) {
+                        bf.Serialize(fs, listcarReports);
+                    }
+                } catch (Exception ex) {
+                    MessageBox.Show(ex.Message);
                 }
 
             }
@@ -165,13 +168,28 @@ namespace Exercise2 {
             if (ofdFireOpen.ShowDialog()==DialogResult.OK) {
                 //バイナリ形式で逆シリアル化
                 var bf = new BinaryFormatter();
-                using (FileStream fs = File.Open(ofdFireOpen.FileName,FileMode.Open,FileAccess.Read)) {
-                    //逆シリアル化して読み込む
-                    listcarReports = (BindingList<CarReport>) bf.Deserialize(fs);
-                    dgvRegistDate.DataSource = null;
-                    dgvRegistDate.DataSource = listcarReports;
+                try {
+                    using (FileStream fs = File.Open(ofdFireOpen.FileName, FileMode.Open, FileAccess.Read)) {
+                        //逆シリアル化して読み込む
+                        listcarReports = (BindingList<CarReport>)bf.Deserialize(fs);
+                        dgvRegistDate.DataSource = null;
+                        dgvRegistDate.DataSource = listcarReports;
+                    }
+                } catch (Exception ex) {
+                    MessageBox.Show(ex.Message);
                 }
             }
+
+            //読み込んだデータを各コンボボックスに登録する
+            foreach (var item in listcarReports) {
+                setCbAuthor(item.Auther);
+                setCbCarName(item.CarName);
+            }
+
+        }
+
+        private void fmMain_Load(object sender, EventArgs e) {
+            dgvRegistDate.Columns[5].Visible = false;
         }
     }
 }

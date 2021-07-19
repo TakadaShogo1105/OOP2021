@@ -391,6 +391,7 @@ namespace Exercise2 {
             this.Controls.Add(this.label1);
             this.Name = "fmMain";
             this.Text = "カーレポートシステム";
+            this.Load += new System.EventHandler(this.fmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.gbMaker.ResumeLayout(false);
             this.gbMaker.PerformLayout();
