@@ -26,7 +26,8 @@ namespace Exercise1 {
             var xelemnts = xdoc.Root.Elements();
             foreach (var xnovelist in xelemnts) {
                 XElement xt = xnovelist.Element("teammembers");
-                Console.WriteLine(xt.Value+"人");
+                XElement xn = xnovelist.Element("name");
+                Console.WriteLine(xn.Value +":"+ xt.Value);
             }
         }
 
@@ -34,15 +35,17 @@ namespace Exercise1 {
 
             var xdoc = XDocument.Load("Sample.xml");
             var xelemnts = xdoc.Root.Elements()
-                .OrderBy(x=>x.Element("firstplayed").Attribute("name kanji"));
+                .OrderBy(x=>(string)x.Element("firstplayed").Attribute("name kanji"));
 
             foreach (var xsample in xelemnts) {
-                
+                var xkanji = xsample.Element("name kanji");
+                Console.WriteLine(xkanji.Value);
             }
 
         }
 
         private static void Exercise1_3(string file) {
+
         }
     }
 }
