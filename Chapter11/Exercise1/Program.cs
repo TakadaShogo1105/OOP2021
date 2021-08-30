@@ -34,17 +34,28 @@ namespace Exercise1 {
         private static void Exercise1_2(string file) {
 
             var xdoc = XDocument.Load(file);
-            var sample2 = xdoc.Root.Elements().OrderBy(x => (string)x.Element("firstplayed"));
-            foreach (var xsanple2 in sample2) {
-                var xname = xsanple2.Element("name").Attribute("kanji");
-                Console.WriteLine(xname);
+            var sports = xdoc.Root.Elements().Select(x => new {
+                Firstplayed = x.Element("firstplayed").
+                Value, Name = x.Element("name").Attribute("kanji").Value
+            }).OrderBy(x => int.Parse(x.Firstplayed));
+
+            foreach (var sport in sports) {
+                Console.WriteLine("{0},{1}",sport.Name,sport.Firstplayed);
             }
-         
 
         }
 
         private static void Exercise1_3(string file) {
-            
+
+            var xdoc = XDocument.Load(file);
+            var sports = xdoc.Root.Elements()
+                .Select(x => new {
+                    Name = x.Element("name").Value,
+                    Teammembers = x.Element("teammembers").Value
+                })
+                .OrderByDescending(x=>int.Parse(x.Teammembers)).First();
+
+            Console.WriteLine("{0}",sports.Name);
         }
     }
 }
