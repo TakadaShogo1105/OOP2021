@@ -10,6 +10,7 @@ namespace Exercise1 {
         static void Main(string[] args) {
 
             var file = "Sample.xml";
+            var xfile = "11_2.xml";
             Exercise1_1(file);
             Console.WriteLine("-------");
 
@@ -22,9 +23,10 @@ namespace Exercise1 {
             Exercise1_4(file);
             Console.WriteLine("-------");
 
-        }
+            Exercise2_1(xfile);
+            Console.WriteLine("-------");
 
-        
+        }
 
         private static void Exercise1_1(string file) {
             var xdoc = XDocument.Load(file);
@@ -73,6 +75,22 @@ namespace Exercise1 {
             xdoc.Root.Add(element);
 
             xdoc.Save("Sports.xml");//XML　ファイルに保存
+        }
+
+        private static void Exercise2_1(string xfile) {
+            var xdoc = XDocument.Load(xfile);
+            var dict = new Dictionary<string, string> {
+                ["鬼灯"] = "ほおずき",
+                ["暖簾"] = "のれん",
+                ["杜撰"] = "ずさん",
+                ["坩堝"] = "るつぼ",
+
+            };
+            var query = dict.Select(x => new XElement("word",
+                                           new XAttribute("kanji", x.Key),
+                                           new XAttribute("yomi", x.Value)));
+            var root = new XElement("xfile", query);
+            root.Save("xfile");
         }
 
     }
