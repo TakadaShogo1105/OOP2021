@@ -139,6 +139,7 @@ namespace Section04 {
                     string s = Regex.Replace(node.Value, "【|】", "");
                     yield return s;
                 }
+                
             }
         }
 
