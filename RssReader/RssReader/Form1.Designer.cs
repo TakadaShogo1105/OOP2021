@@ -48,6 +48,7 @@ namespace RssReader {
             this.tbUrl.Name = "tbUrl";
             this.tbUrl.Size = new System.Drawing.Size(626, 39);
             this.tbUrl.TabIndex = 1;
+            this.tbUrl.TextChanged += new System.EventHandler(this.tbUrl_TextChanged);
             // 
             // lbTitles
             // 
@@ -57,6 +58,7 @@ namespace RssReader {
             this.lbTitles.Name = "lbTitles";
             this.lbTitles.Size = new System.Drawing.Size(220, 349);
             this.lbTitles.TabIndex = 2;
+            this.lbTitles.Click += new System.EventHandler(this.lbTitles_Click);
             // 
             // wbBrowser
             // 

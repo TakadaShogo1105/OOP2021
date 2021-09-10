@@ -14,38 +14,47 @@ using System.Xml.Linq;
 
 namespace RssReader {
     public partial class Form1 : Form {
+        List<string> rink = new List<string>();
         public Form1() {
             InitializeComponent();
         }
 
         private void btRead_Click(object sender, EventArgs e) {
-            //System.Diagnostics.Process.Start(tbUrl.Text);
-            //String URLString = tbUrl.Text;
-            //XmlTextReader reader = new XmlTextReader(URLString);
-            //var xdoc = XmlDocument.Load(tbUrl.Text);
 
             SetRssTitle(tbUrl.Text);
+
         }
 
         private void SetRssTitle(string uri) {
+
             using (var wc = new WebClient()) {
+
                 wc.Headers.Add("Content-type", "charset=UTF-8");
-
-                /*var uriString = string.Format(
-                    @"http://rss.weather.yahoo.co.jp/rss/days/{0}.xml", cityCode);*/
-
+                    
                 var url = new Uri(uri);
+
                 var stream = wc.OpenRead(url);
 
                 XDocument xdoc = XDocument.Load(stream);
-                var nodes = xdoc.Root.Descendants("title");
+
+                var nodes = xdoc.Root.Descendants("item");
+
                 foreach (var node in nodes) {
-                    lbTitles.Items.Add(
-                        Regex.Replace(node.Value, "【|】", ""));
+                    lbTitles.Items.Add(node.Element("title").Value);
+                    rink.Add(node.Element("link").Value);
                     
                 }
                 
             }
+        }
+
+        private void lbTitles_Click(object sender, EventArgs e) {
+            var num = lbTitles.SelectedIndex;
+            wbBrowser.Url = new Uri(rink[num]);
+        }
+
+        private void tbUrl_TextChanged(object sender, EventArgs e) {
+
         }
     }
 }
