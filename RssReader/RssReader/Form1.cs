@@ -9,53 +9,50 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Linq;
 
 namespace RssReader {
     public partial class Form1 : Form {
-        List<string> rink = new List<string>();
+        IEnumerable<ItemDate> items = null;
+
         public Form1() {
             InitializeComponent();
         }
 
         private void btRead_Click(object sender, EventArgs e) {
-
-            SetRssTitle(tbUrl.Text);
-
+            setRssTitle(tbUrl.Text);
         }
 
-        private void SetRssTitle(string uri) {
+        private void setRssTitle(string uri) {
 
             using (var wc = new WebClient()) {
 
                 wc.Headers.Add("Content-type", "charset=UTF-8");
-                    
-                var url = new Uri(uri);
-
-                var stream = wc.OpenRead(url);
+                var stream = wc.OpenRead(uri);
 
                 XDocument xdoc = XDocument.Load(stream);
+                items = xdoc.Root.Descendants("item").Select(x => new ItemDate {
 
-                var nodes = xdoc.Root.Descendants("item");
+                    Title = (string)x.Element("title"),
+                    Link = (string)x.Element("link"),
+                    PubDate = (DateTime)x.Element("pubDate"),
+                    Description = (string)x.Element("description")
+                });
 
-                foreach (var node in nodes) {
-                    lbTitles.Items.Add(node.Element("title").Value);
-                    rink.Add(node.Element("link").Value);
-                    
+                foreach (var item in items) {
+                    lbTitles.Items.Add(item.Title);
                 }
-                
             }
         }
 
         private void lbTitles_Click(object sender, EventArgs e) {
-            var num = lbTitles.SelectedIndex;
-            wbBrowser.Url = new Uri(rink[num]);
-        }
 
-        private void tbUrl_TextChanged(object sender, EventArgs e) {
+            string link = (items.ToArray())[lbTitles.SelectedIndex].Link;
+            wbBrowser.Url = new Uri(link);
+
+            lbDescription.Text = "概要\n";
+            lbDescription.Text += (items.ToArray())[lbTitles.SelectedIndex].Description;
 
         }
     }
 }
-

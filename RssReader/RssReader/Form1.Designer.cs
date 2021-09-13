@@ -29,6 +29,7 @@ namespace RssReader {
             this.lbTitles = new System.Windows.Forms.ListBox();
             this.wbBrowser = new System.Windows.Forms.WebBrowser();
             this.btRead = new System.Windows.Forms.Button();
+            this.lbDescription = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +49,6 @@ namespace RssReader {
             this.tbUrl.Name = "tbUrl";
             this.tbUrl.Size = new System.Drawing.Size(626, 39);
             this.tbUrl.TabIndex = 1;
-            this.tbUrl.TextChanged += new System.EventHandler(this.tbUrl_TextChanged);
             // 
             // lbTitles
             // 
@@ -56,7 +56,7 @@ namespace RssReader {
             this.lbTitles.ItemHeight = 15;
             this.lbTitles.Location = new System.Drawing.Point(15, 80);
             this.lbTitles.Name = "lbTitles";
-            this.lbTitles.Size = new System.Drawing.Size(220, 349);
+            this.lbTitles.Size = new System.Drawing.Size(218, 169);
             this.lbTitles.TabIndex = 2;
             this.lbTitles.Click += new System.EventHandler(this.lbTitles_Click);
             // 
@@ -79,11 +79,20 @@ namespace RssReader {
             this.btRead.UseVisualStyleBackColor = true;
             this.btRead.Click += new System.EventHandler(this.btRead_Click);
             // 
+            // lbDescription
+            // 
+            this.lbDescription.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lbDescription.Location = new System.Drawing.Point(12, 267);
+            this.lbDescription.Name = "lbDescription";
+            this.lbDescription.Size = new System.Drawing.Size(221, 162);
+            this.lbDescription.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 450);
+            this.Controls.Add(this.lbDescription);
             this.Controls.Add(this.btRead);
             this.Controls.Add(this.wbBrowser);
             this.Controls.Add(this.lbTitles);
@@ -103,6 +112,7 @@ namespace RssReader {
         private System.Windows.Forms.ListBox lbTitles;
         private System.Windows.Forms.WebBrowser wbBrowser;
         private System.Windows.Forms.Button btRead;
+        private System.Windows.Forms.Label lbDescription;
     }
 }
 
