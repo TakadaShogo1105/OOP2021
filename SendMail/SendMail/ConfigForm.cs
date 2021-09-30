@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace SendMail {
     public partial class ConfigForm : Form {
+        Form1 f1;
+        private Settings settings = Settings.getInstance();
         public ConfigForm() {
             InitializeComponent();
         }
@@ -19,21 +21,40 @@ namespace SendMail {
         }
 
         private void btDefault_Click(object sender, EventArgs e) {
-            Settings settings = new Settings();
             tbHost.Text = settings.sHost();
             tbPort.Text = settings.sPort();
             tbUserName.Text = settings.sMailAddr();
             tbPass.Text = settings.sPass();
+            tbSender.Text = settings.sMailAddr();
+        }
+
+        private void ConfigForm_Load(object sender, EventArgs e) {
+            f1 = new Form1();
         }
 
         //OKボタン
         private void btOk_Click(object sender, EventArgs e) {
+            SettingRegist();
             this.Close();
+        }
+
+        //送信データ登録
+        private void SettingRegist() {
+            settings.Host = tbHost.Text;
+            settings.Port = int.Parse(tbPort.Text);
+            settings.MailAddr = tbUserName.Text;
+            settings.Pass = tbPass.Text;
+            settings.Ssl = cbSsl.Checked;
         }
 
         //適用ボタン
         private void btApply_Click(object sender, EventArgs e) {
-           
+            SettingRegist();
+        }
+
+        //キャンセルボタン
+        private void btCancel_Click(object sender, EventArgs e) {
+            this.Close();
         }
     }
 }

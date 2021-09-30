@@ -12,6 +12,11 @@ using System.Windows.Forms;
 
 namespace SendMail {
     public partial class Form1 : Form {
+        //設定画面
+        private ConfigForm configForm = new ConfigForm();
+        //設定情報
+        private Settings settings = Settings.getInstance();
+
         public Form1() {
             InitializeComponent();
         }
@@ -26,11 +31,11 @@ namespace SendMail {
                 //メール送信のためのインスタンスを生成
                 MailMessage mailMessage = new MailMessage();
                 //差出人
-                mailMessage.From = new MailAddress("ojsinfosys01@gmail.com");
+                mailMessage.From = new MailAddress(settings.MailAddr);
                 //宛先（To）
                 mailMessage.To.Add(tbTo.Text);
                 mailMessage.CC.Add(toCC.Text);
-                mailMessage.Bcc.Add(toBCC.Text);
+//                mailMessage.Bcc.Add(toBCC.Text);
 
                 //件名（タイトル）
                 mailMessage.Subject = tbTitle.Text;
