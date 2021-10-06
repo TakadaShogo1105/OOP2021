@@ -43,8 +43,11 @@ namespace SendMail {
         }
 
         public string sPass() {
-            return "Infosys2019";
+            return "Infosys2021";
         }
 
+        public bool bSsl() {
+            return true;
+        }
     }
 }
