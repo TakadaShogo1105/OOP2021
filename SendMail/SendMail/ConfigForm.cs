@@ -65,8 +65,8 @@ namespace SendMail {
             };
 
             using (var writer = XmlWriter.Create("mailsetting.xml", xws)) {
-                var serializer = new DataContractSerializer(xws.GetType());
-                serializer.WriteObject(writer, xws);
+                var serializer = new DataContractSerializer(settings.GetType());
+                serializer.WriteObject(writer, settings);
             }
             this.Close();
         }

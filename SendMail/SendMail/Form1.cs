@@ -92,7 +92,7 @@ namespace SendMail {
                 settings.MailAddr = readSettings.MailAddr;
                 settings.Pass = readSettings.Pass;
                 settings.Ssl = readSettings.Ssl;
-                
+
             }
         }
 
