@@ -26,6 +26,11 @@ namespace SendMail {
         
 
         private void btSend_Click(object sender, EventArgs e) {
+
+            if (!Settings.Set) {
+                MessageBox.Show("送信情報を設定してください");
+            }
+
             try {
 
                 //メール送信のためのインスタンスを生成
@@ -83,18 +88,22 @@ namespace SendMail {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            using (var reader = XmlReader.Create("mailsetting.xml")) {
-                var serializer = new DataContractSerializer(typeof(Settings));
-                var readSettings = serializer.ReadObject(reader) as Settings;
-
-                settings.Host = readSettings.Host;
-                settings.Port = readSettings.Port;
-                settings.MailAddr = readSettings.MailAddr;
-                settings.Pass = readSettings.Pass;
-                settings.Ssl = readSettings.Ssl;
-
+            //起動時に送信情報が未設定の場合設定画面を表示する
+            if (!Settings.Set) {
+                configForm.ShowDialog();
             }
         }
 
+        private void 新規作成NToolStripMenuItem_Click(object sender, EventArgs e) {
+            tbTo.Clear();
+            toCC.Clear();
+            toBCC.Clear();
+            tbTitle.Clear();
+            tbMessage.Clear();
+        }
+
+        private void 終了XToolStripMenuItem_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
     }
 }

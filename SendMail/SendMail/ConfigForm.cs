@@ -45,9 +45,8 @@ namespace SendMail {
 
         //OKボタン
         private void btOk_Click(object sender, EventArgs e) {
-            SettingRegist();
-
-            
+            btApply_Click(sender,e);//適用ボタンの処理を呼び出し
+            this.Close();
         }
 
         //送信データ登録
@@ -73,7 +72,8 @@ namespace SendMail {
 
         //適用ボタン
         private void btApply_Click(object sender, EventArgs e) {
-            SettingRegist();
+            settings.setSendConfig(tbHost.Text, int.Parse(tbPort.Text),
+                                   tbUserName.Text, tbPass.Text, cbSsl.Checked);
         }
 
         //キャンセルボタン
