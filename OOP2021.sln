@@ -101,6 +101,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SendMail", "SendMail", "{42
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMail", "SendMail\SendMail\SendMail.csproj", "{53E106C4-A2BD-4F5C-A295-0DF1556F47E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleEntityFramework", "EntityFramework\SampleEntityFramework\SampleEntityFramework.csproj", "{78F130FB-18CD-4E7A-BE03-ADDA88DFE712}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter13", "Chapter13", "{CAD10EDF-E500-4983-B137-583608A039D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -239,6 +243,10 @@ Global
 		{53E106C4-A2BD-4F5C-A295-0DF1556F47E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53E106C4-A2BD-4F5C-A295-0DF1556F47E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53E106C4-A2BD-4F5C-A295-0DF1556F47E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F130FB-18CD-4E7A-BE03-ADDA88DFE712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F130FB-18CD-4E7A-BE03-ADDA88DFE712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F130FB-18CD-4E7A-BE03-ADDA88DFE712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F130FB-18CD-4E7A-BE03-ADDA88DFE712}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -279,6 +287,7 @@ Global
 		{CF65651B-5EB0-4E3D-BF93-8B51CD7C8B19} = {84BFEEA0-5FF4-4F34-9268-5E9761EEDA35}
 		{9D9DB7BA-2EBD-4C17-8CCB-E274BE79BBA7} = {9F83D952-30AE-4D3A-83F5-0228946B882B}
 		{53E106C4-A2BD-4F5C-A295-0DF1556F47E6} = {42A3B454-31C2-4314-9B4F-4C4D62B65A87}
+		{78F130FB-18CD-4E7A-BE03-ADDA88DFE712} = {CAD10EDF-E500-4983-B137-583608A039D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30F321BF-1C98-4CD6-B1ED-E7FC5730015B}
