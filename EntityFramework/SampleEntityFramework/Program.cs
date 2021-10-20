@@ -22,7 +22,7 @@ namespace SampleEntityFramework {
             //データの追加
             //InsertBooks();
             //DispleyAllBooks();
-           // AddAuthors();
+            // AddAuthors();
             //AddBooks();
             //UpdateBook();
             //DeleteBook();
@@ -31,19 +31,24 @@ namespace SampleEntityFramework {
             //Mondai_2();//OK
             //Mondai_3();//OK
             Console.WriteLine("#1.1");//OK
+            Console.WriteLine();
             //Exercise13_1_1();
 
-            Console.WriteLine("#1.2");
+            Console.WriteLine("#1.2");//OK
+            Console.WriteLine();
             Exercise13_1_2();
 
-            Console.WriteLine("#1.3");
-           // Exercise13_1_3();
+            Console.WriteLine("#1.3");//OK
+            Console.WriteLine();
+            Exercise13_1_3();
 
-            Console.WriteLine("#1.4");
-           // Exercise13_1_4();
+            Console.WriteLine("#1.4");//OK
+            Console.WriteLine();
+            Exercise13_1_4();
 
             Console.WriteLine("#1.5");
-           // Exercise13_1_5();
+            Console.WriteLine();
+            Exercise13_1_5();
 
             Console.ReadLine();//F5で実行してもすぐコンソール画面が消えないようにするs
 
@@ -114,15 +119,32 @@ namespace SampleEntityFramework {
         }
 
         private static void Exercise13_1_3() {
-
+            using (var db = new BooksDbContext()) {
+                var books = db.Books.Where(x=>x.Title.Length == db.Books.Max(s=>s.Title.Length));
+                foreach (var book in books) {
+                    Console.WriteLine($"タイトルが最も長い書籍:{book.Title }");
+                }
+            }
         }
 
         private static void Exercise13_1_4() {
+            using (var db = new BooksDbContext()) {
+                var books = db.Books.OrderBy(b => b.PublishedYear).Take(3);
+                Console.WriteLine("発行年が古い3冊のタイトルと著者名");
+                foreach (var book in books) {
+                    Console.WriteLine($"{book.Title}:{book.Author.Name}");
+                }
 
+            }
         }
 
         private static void Exercise13_1_5() {
-
+            using (var db = new BooksDbContext()) {
+                var books = db.Books.OrderByDescending(b => b.Author.Birthday);
+                foreach (var book in books) {
+                    Console.WriteLine($"{book.Title}:{book.PublishedYear}:{book.Author.Birthday}");
+                }
+            }
         }
 
         private static void Mondai_3() {
