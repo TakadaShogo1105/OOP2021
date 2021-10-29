@@ -209,8 +209,8 @@ namespace Exercise2 {
 
 
         private void fmMain_Load(object sender, EventArgs e) {
-           
-            //dgvRegistDate.Columns[5].Visible = false;
+            carReportDataGridView.Columns[0].Visible = false;
+            carReportDataGridView.Columns[1].HeaderText = "日付";
         }
 
         private void carReportBindingNavigatorSaveItem_Click(object sender, EventArgs e) {
@@ -259,6 +259,14 @@ namespace Exercise2 {
 
         private void carReportDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e) {
 
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e) {
+            cbAuthor.Text = null;
+            rbOther.Checked = true;
+            cbCarName.Text = null;
+            tbReport.Text = null;
+            pbPicture.Image = null;
         }
     }
 }
