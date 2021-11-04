@@ -38,9 +38,6 @@ namespace Exercise2 {
             this.label6 = new System.Windows.Forms.Label();
             this.btPictureOpen = new System.Windows.Forms.Button();
             this.btPictureDelete = new System.Windows.Forms.Button();
-            this.btDateDelete = new System.Windows.Forms.Button();
-            this.btDateAdd = new System.Windows.Forms.Button();
-            this.btDateCorrect = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pbPicture = new System.Windows.Forms.PictureBox();
             this.gbMaker = new System.Windows.Forms.GroupBox();
@@ -81,6 +78,8 @@ namespace Exercise2 {
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ssMessage = new System.Windows.Forms.StatusStrip();
+            this.ssErrorLavel = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.gbMaker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infosys202122DataSet)).BeginInit();
@@ -88,6 +87,7 @@ namespace Exercise2 {
             ((System.ComponentModel.ISupportInitialize)(this.carReportBindingNavigator)).BeginInit();
             this.carReportBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carReportDataGridView)).BeginInit();
+            this.ssMessage.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -202,36 +202,6 @@ namespace Exercise2 {
             this.btPictureDelete.Text = "削除";
             this.btPictureDelete.UseVisualStyleBackColor = true;
             this.btPictureDelete.Click += new System.EventHandler(this.btPictureDelete_Click);
-            // 
-            // btDateDelete
-            // 
-            this.btDateDelete.Location = new System.Drawing.Point(1045, 392);
-            this.btDateDelete.Name = "btDateDelete";
-            this.btDateDelete.Size = new System.Drawing.Size(75, 23);
-            this.btDateDelete.TabIndex = 13;
-            this.btDateDelete.Text = "削除";
-            this.btDateDelete.UseVisualStyleBackColor = true;
-            this.btDateDelete.Click += new System.EventHandler(this.btDateDelete_Click);
-            // 
-            // btDateAdd
-            // 
-            this.btDateAdd.Location = new System.Drawing.Point(594, 392);
-            this.btDateAdd.Name = "btDateAdd";
-            this.btDateAdd.Size = new System.Drawing.Size(75, 23);
-            this.btDateAdd.TabIndex = 14;
-            this.btDateAdd.Text = "追加";
-            this.btDateAdd.UseVisualStyleBackColor = true;
-            this.btDateAdd.Click += new System.EventHandler(this.btDateAdd_Click);
-            // 
-            // btDateCorrect
-            // 
-            this.btDateCorrect.Location = new System.Drawing.Point(752, 392);
-            this.btDateCorrect.Name = "btDateCorrect";
-            this.btDateCorrect.Size = new System.Drawing.Size(75, 23);
-            this.btDateCorrect.TabIndex = 15;
-            this.btDateCorrect.Text = "修正";
-            this.btDateCorrect.UseVisualStyleBackColor = true;
-            this.btDateCorrect.Click += new System.EventHandler(this.btDateCorrect_Click);
             // 
             // label7
             // 
@@ -590,11 +560,28 @@ namespace Exercise2 {
             this.dataGridViewImageColumn1.HeaderText = "Picture";
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
+            // ssMessage
+            // 
+            this.ssMessage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ssErrorLavel});
+            this.ssMessage.Location = new System.Drawing.Point(0, 664);
+            this.ssMessage.Name = "ssMessage";
+            this.ssMessage.Size = new System.Drawing.Size(1178, 22);
+            this.ssMessage.TabIndex = 23;
+            this.ssMessage.Text = "statusStrip1";
+            // 
+            // ssErrorLavel
+            // 
+            this.ssErrorLavel.Name = "ssErrorLavel";
+            this.ssErrorLavel.Size = new System.Drawing.Size(118, 17);
+            this.ssErrorLavel.Text = "toolStripStatusLabel1";
+            // 
             // fmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1178, 686);
+            this.Controls.Add(this.ssMessage);
             this.Controls.Add(this.carReportDataGridView);
             this.Controls.Add(this.carReportBindingNavigator);
             this.Controls.Add(this.btExit);
@@ -603,9 +590,6 @@ namespace Exercise2 {
             this.Controls.Add(this.gbMaker);
             this.Controls.Add(this.pbPicture);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btDateCorrect);
-            this.Controls.Add(this.btDateAdd);
-            this.Controls.Add(this.btDateDelete);
             this.Controls.Add(this.btPictureDelete);
             this.Controls.Add(this.btPictureOpen);
             this.Controls.Add(this.label6);
@@ -630,6 +614,8 @@ namespace Exercise2 {
             this.carReportBindingNavigator.ResumeLayout(false);
             this.carReportBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carReportDataGridView)).EndInit();
+            this.ssMessage.ResumeLayout(false);
+            this.ssMessage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,9 +635,6 @@ namespace Exercise2 {
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btPictureOpen;
         private System.Windows.Forms.Button btPictureDelete;
-        private System.Windows.Forms.Button btDateDelete;
-        private System.Windows.Forms.Button btDateAdd;
-        private System.Windows.Forms.Button btDateCorrect;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pbPicture;
         private System.Windows.Forms.GroupBox gbMaker;
@@ -692,6 +675,8 @@ namespace Exercise2 {
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.StatusStrip ssMessage;
+        private System.Windows.Forms.ToolStripStatusLabel ssErrorLavel;
     }
 }
 

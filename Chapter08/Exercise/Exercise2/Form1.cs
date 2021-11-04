@@ -229,6 +229,7 @@ namespace Exercise2 {
             if (carReportDataGridView.CurrentRow == null) return;
 
             try {
+                ssErrorLavel.Text = "";
 
                 dtpDate.Value = (DateTime)carReportDataGridView.CurrentRow.Cells[1].Value; //日付
                 cbAuthor.Text = carReportDataGridView.CurrentRow.Cells[2].Value.ToString(); //記録者
@@ -237,17 +238,24 @@ namespace Exercise2 {
                 tbReport.Text = carReportDataGridView.CurrentRow.Cells[5].Value.ToString();//レポート
                 pbPicture.Image = ByteArrayToImage((byte[])carReportDataGridView.CurrentRow.Cells[6].Value); //画像
 
-            } catch (Exception) {
+            } catch (InvalidCastException) {
 
                 pbPicture.Image = null;
+            }
+              catch(Exception ex) {
+                //MessageBox.Show(ex.Message);
+                ssErrorLavel.Text = ex.Message;
             }
 
         }
 
         // バイト配列をImageオブジェクトに変換
         public static Image ByteArrayToImage(byte[] b) {
-            ImageConverter imgconv = new ImageConverter();
-            Image img = (Image)imgconv.ConvertFrom(b);
+            Image img = null;
+            if(b.Length > 0) {
+                ImageConverter imgconv = new ImageConverter();
+                img = (Image)imgconv.ConvertFrom(b);
+            }
             return img;
         }
         // Imageオブジェクトをバイト配列に変換
@@ -262,11 +270,14 @@ namespace Exercise2 {
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e) {
+
+            dtpDate.Value = DateTime.Now;
             cbAuthor.Text = null;
             rbOther.Checked = true;
             cbCarName.Text = null;
             tbReport.Text = null;
             pbPicture.Image = null;
+
         }
     }
 }
