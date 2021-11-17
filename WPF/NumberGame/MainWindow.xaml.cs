@@ -18,28 +18,31 @@ namespace NumberGame {
     /// MainWindow.xaml の相互作用ロジック
     /// </summary>
     public partial class MainWindow : Window {
+
+        int number;
+
         public MainWindow() {
             InitializeComponent();
+            Random random = new Random();
+            number = random.Next(1,25);
         }
 
+        
         private void Button_Click(object sender, RoutedEventArgs e) {
 
+            var button = (Button)sender; 
+            int numbers = int.Parse(((Button)sender).Content.ToString());
 
-           
-            
-            if ((int)num.Text == 1) {
-
+            if (number == numbers) {
                 Answer.Text = "正解";
-
-            } else if ((int)Answer. == 2) {
-                Answer.Text = "もっと小さいです";
-            } else if ((int)num.Content == 0) {
+            }else if(number > numbers) {
                 Answer.Text = "もっと大きいです";
+            } else {
+                Answer.Text = "もっと小さいです";
             }
+            
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e) {
-
-        }
+        
     }
 }
