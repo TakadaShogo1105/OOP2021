@@ -40,6 +40,7 @@ namespace NumberGame {
                 _time = _time.Add(TimeSpan.FromSeconds(1));
             }, Application.Current.Dispatcher);
 
+
             _timer.Start();
         }
 
