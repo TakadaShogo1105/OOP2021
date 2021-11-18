@@ -53,6 +53,8 @@ namespace SendMail {
                     Set = false;//データ未設定
                 } 
                 catch (SecurityException ex) {
+                    
+                } catch (Exception ex) {
 
                 }
             }

@@ -75,6 +75,12 @@ namespace SendMail {
             }
             else {
                 MessageBox.Show("送信完了");
+                tbTo.Clear();
+                toCC.Clear();
+                toBCC.Clear();
+                tbTitle.Clear();
+                tbMessage.Clear();
+
             }
         }
 
@@ -104,6 +110,7 @@ namespace SendMail {
 
         private void 終了XToolStripMenuItem_Click(object sender, EventArgs e) {
             Application.Exit();
+            
         }
 
         private void tbTo_TextChanged(object sender, EventArgs e) {
