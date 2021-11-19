@@ -44,7 +44,6 @@ namespace NumberGame {
             _timer.Start();
         }
 
-        
         private void Button_Click(object sender, RoutedEventArgs e) {
 
             var button = (Button)sender; 
@@ -59,9 +58,6 @@ namespace NumberGame {
             } else {
                 Answer.Text = "もっと小さいです";
             }
-            
         }
-
-        
     }
 }

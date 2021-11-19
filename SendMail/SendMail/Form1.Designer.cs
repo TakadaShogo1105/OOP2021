@@ -89,7 +89,6 @@ namespace SendMail {
             this.tbTo.Name = "tbTo";
             this.tbTo.Size = new System.Drawing.Size(358, 39);
             this.tbTo.TabIndex = 3;
-            this.tbTo.TextChanged += new System.EventHandler(this.tbTo_TextChanged);
             // 
             // tbTitle
             // 
@@ -149,7 +148,6 @@ namespace SendMail {
             this.toBCC.Name = "toBCC";
             this.toBCC.Size = new System.Drawing.Size(358, 39);
             this.toBCC.TabIndex = 3;
-            this.toBCC.TextChanged += new System.EventHandler(this.toBCC_TextChanged);
             // 
             // label5
             // 
@@ -215,7 +213,6 @@ namespace SendMail {
             | System.Windows.Forms.Keys.N)));
             this.新規作成NToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.新規作成NToolStripMenuItem.Text = "新規作成(&N)";
-            this.新規作成NToolStripMenuItem.Click += new System.EventHandler(this.新規作成NToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -229,7 +226,6 @@ namespace SendMail {
             | System.Windows.Forms.Keys.S)));
             this.設定ToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.設定ToolStripMenuItem.Text = "設定...";
-            this.設定ToolStripMenuItem.Click += new System.EventHandler(this.btConfig_Click);
             // 
             // 終了XToolStripMenuItem
             // 
@@ -237,7 +233,6 @@ namespace SendMail {
             this.終了XToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.終了XToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.終了XToolStripMenuItem.Text = "終了(&X)";
-            this.終了XToolStripMenuItem.Click += new System.EventHandler(this.終了XToolStripMenuItem_Click);
             // 
             // 編集EToolStripMenuItem
             // 
