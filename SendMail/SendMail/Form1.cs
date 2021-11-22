@@ -145,5 +145,10 @@ namespace SendMail
         {
             configForm.ShowDialog();
         }
+
+        private void tbTo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

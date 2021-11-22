@@ -89,6 +89,7 @@ namespace SendMail {
             this.tbTo.Name = "tbTo";
             this.tbTo.Size = new System.Drawing.Size(358, 39);
             this.tbTo.TabIndex = 3;
+            this.tbTo.TextChanged += new System.EventHandler(this.tbTo_TextChanged);
             // 
             // tbTitle
             // 
