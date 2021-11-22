@@ -34,13 +34,13 @@ namespace Pelmanism
                 "〇","●","△","▲","□","■","◇","◆","☆","★","※","×"
             };
 
-            //カードのインスタンスの生成
-            cards = new Card[picture.Length * 2];
+
+        //カードのインスタンスの生成
+        cards = new Card[picture.Length * 2];
             for (int i = 0, j = 0; i < cards.Length; i += 2, j++)
             {
                 cards[i] = new Card(picture[j]);
                 cards[i + 1] = new Card(picture[j]);
-
             }
 
         }
