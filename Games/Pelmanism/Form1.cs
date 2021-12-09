@@ -180,7 +180,7 @@ namespace Pelmanism
                 card.Close();
             }
             buttonStart.Enabled = false;
-            gameSec = +60;
+            gameSec = +90;
             timer1.Start();
 
             labelGuidance.Text = "クリックしてカードをめくってください。";
