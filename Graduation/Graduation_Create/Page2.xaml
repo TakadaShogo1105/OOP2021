@@ -9,11 +9,10 @@
       Title="Page2">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"
-VerticalAlignment="Top" Background="MediumTurquoise" Height="450" Width="800"><InlineUIContainer/><InlineUIContainer>
-                <Label Content="第一問:『鮪』の読み方は『まぐろ』❓" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-    
-            </InlineUIContainer><InlineUIContainer/></TextBlock>
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="55" />
+        
+        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鮪2.png" Margin="10,-55,-266,-111"/>
+        <Label Content="第一問:『鮪』の読み方は『まぐろ』❓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
+        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70" />
+
     </Grid>
 </Page>

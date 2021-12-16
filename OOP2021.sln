@@ -142,6 +142,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graduation", "Graduation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graduation_Create", "Graduation\Graduation_Create\Graduation_Create.csproj", "{3C6992F3-5F2A-43D3-9A52-C57DD5098F9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample01", "Graduation\Sample01\Sample01.csproj", "{C57B2F3B-AE1B-4658-B066-5FEE7003306B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -324,6 +326,10 @@ Global
 		{3C6992F3-5F2A-43D3-9A52-C57DD5098F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C6992F3-5F2A-43D3-9A52-C57DD5098F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C6992F3-5F2A-43D3-9A52-C57DD5098F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57B2F3B-AE1B-4658-B066-5FEE7003306B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57B2F3B-AE1B-4658-B066-5FEE7003306B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57B2F3B-AE1B-4658-B066-5FEE7003306B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57B2F3B-AE1B-4658-B066-5FEE7003306B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -375,6 +381,7 @@ Global
 		{74FECE22-4208-41EC-A05F-F2B039851D97} = {2B8A9FFE-F13D-4BE6-9871-00C3B2A7556D}
 		{3AA89240-3D00-4D00-A03A-57CCF09CD52B} = {2B8A9FFE-F13D-4BE6-9871-00C3B2A7556D}
 		{3C6992F3-5F2A-43D3-9A52-C57DD5098F9F} = {7FBFA38E-CCA8-4221-97FD-9C22F9060494}
+		{C57B2F3B-AE1B-4658-B066-5FEE7003306B} = {7FBFA38E-CCA8-4221-97FD-9C22F9060494}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30F321BF-1C98-4CD6-B1ED-E7FC5730015B}

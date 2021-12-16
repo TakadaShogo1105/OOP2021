@@ -10,8 +10,8 @@
 
     <Grid>
         <Image HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="800" Source="sakana.png" Margin="0,-58,0,0"/>
-        <Label Content="KANJI Quiz" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Height="126" Width="716" FontSize="100" FontFamily="Gill Sans Ultra Bold" />
-        <Label Content="Start Click!" HorizontalAlignment="Left" Margin="44,224,0,0" VerticalAlignment="Top" FontSize="100" Width="724" FontFamily="Gill Sans Ultra Bold Condensed"/>
+        <Label Content="KANJI Quiz" HorizontalAlignment="Left" Margin="44,-24,0,0" VerticalAlignment="Top" Height="126" Width="716" FontSize="100" FontFamily="Gill Sans Ultra Bold" />
+        <Label Content="Start Click!" HorizontalAlignment="Left" Margin="36,171,0,0" VerticalAlignment="Top" FontSize="100" Width="724" FontFamily="Gill Sans Ultra Bold Condensed"/>
 
     </Grid>
 </Page>

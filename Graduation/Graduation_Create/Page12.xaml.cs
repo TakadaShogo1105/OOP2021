@@ -24,5 +24,6 @@ namespace Sotugyo02
         {
             InitializeComponent();
         }
+
     }
 }

@@ -9,11 +9,16 @@
       Title="Page12">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"
-VerticalAlignment="Top" Background="MediumTurquoise" Height="450" Width="800"><InlineUIContainer/><InlineUIContainer>
-                <Label Content="" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-    
-            </InlineUIContainer><InlineUIContainer/></TextBlock>
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="55" />
+        <Image HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="800" Source="あおpng.png" Margin="0,10,0,0"/>
+        <Label Content="Quiz End" HorizontalAlignment="Left" Margin="52,-25,0,0" VerticalAlignment="Top" Height="126" Width="716" FontSize="100" FontFamily="Gill Sans Ultra Bold" />
+        <Label Content="See You Again" HorizontalAlignment="Left" Margin="44,73,0,0" VerticalAlignment="Top" FontSize="80" Width="724" FontFamily="Gill Sans Ultra Bold Condensed"/>
+        <StackPanel HorizontalAlignment="Left" Height="256" Margin="0,194,0,0" VerticalAlignment="Top" Width="363"/>
+        <StackPanel HorizontalAlignment="Left" Height="256" Margin="390,194,0,0" VerticalAlignment="Top" Width="410"/>
+        <Label Content="Clear" HorizontalAlignment="Left" Margin="95,194,0,0" VerticalAlignment="Top" FontSize="50"/>
+        <Label Content="Miss" HorizontalAlignment="Left" Margin="511,199,0,0" VerticalAlignment="Top" FontSize="50"/>
+        <TextBox x:Name="seikaitext" HorizontalAlignment="Left" Height="90" Margin="82,276,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="186" RenderTransformOrigin="0.483,-0.087"/>
+        <TextBox x:Name="matigaitext" HorizontalAlignment="Left" Height="90" Margin="468,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+
+
     </Grid>
 </Page>

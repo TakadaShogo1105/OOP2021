@@ -9,11 +9,9 @@
       Title="Page7">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap"
-VerticalAlignment="Top" Background="MediumTurquoise" Height="450" Width="800"><InlineUIContainer/><InlineUIContainer>
-                <Label Content="第六問:『蛸』の読み方は『たこ』❓" Height="172" Width="798" FontSize="47" FontFamily="Segoe UI Black" />
-    
-            </InlineUIContainer><InlineUIContainer/></TextBlock>
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="55" />
+        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="蛸.png" Margin="91,-59,-347,-107"/>
+        <Label Content="第六問:『蛸』の読み方は『たこ』❓" HorizontalAlignment="Left" Margin="10,10,-8,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="White" />
+        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70" Foreground="White"/>
+
     </Grid>
 </Page>
