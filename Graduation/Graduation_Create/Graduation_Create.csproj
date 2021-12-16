@@ -296,5 +296,23 @@
   <ItemGroup>
     <Resource Include="鱘.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="イカ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="鯖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="クリオネ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="クマノミ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="クラゲ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kurage.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

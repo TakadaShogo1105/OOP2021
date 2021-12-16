@@ -9,8 +9,8 @@
       Title="Page11">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鰒.png" Margin="0,-53,-256,-113"/>
-        <Label Content="第十問:『鰒』の読み方は『たい』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
+        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="クリオネ.png" Margin="66,-62,-322,-104"/>
+        <Label Content="第十問:『妖尾禰』の読み方は『くりおね』❓" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="46" FontFamily="Segoe UI Black" />
         <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
     </Grid>
 </Page>

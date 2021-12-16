@@ -9,8 +9,8 @@
       Title="Page8">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鯱.png" Margin="90,-139,-346,-27"/>
-        <Label Content="第七問:『鯱』の読み方は『しゃち』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鰒.png" Margin="10,-97,-266,-69"/>
+        <Label Content="第七問:『鰒』の読み方は『ふぐ』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="Black"/>
         <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70" Foreground="Black"/>
     </Grid>
 </Page>

@@ -9,8 +9,8 @@
       Title="Page6">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鰹.png" Margin="90,-139,-346,-27"/>
-        <Label Content="第五問:『鰹』の読み方は『すずき』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
+        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="kurage.png" Margin="81,46,-337,-212"/>
+        <Label Content="第五問:『鯔』の読み方は『くらげ』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
+        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="155,261,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
     </Grid>
 </Page>
