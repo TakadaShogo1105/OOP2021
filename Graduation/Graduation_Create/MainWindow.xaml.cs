@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using Microsoft.Office.Interop.Excel;
 
 namespace Graduation_Create
@@ -22,9 +23,9 @@ namespace Graduation_Create
     public partial class MainWindow : System.Windows.Window
     {
 
-        int scount = 0;
-        int hcount = 0;
         private NavigationService _navi;    //ナビゲーションサービス
+        DispatcherTimer _timer;
+        TimeSpan _time;
         public MainWindow()
         {
             InitializeComponent();
@@ -37,6 +38,8 @@ namespace Graduation_Create
         {
 
             _navi.Navigate(_uriList[0]);    //初期ページの表示
+            
+            
         }
 
         private List<Uri> _uriList = new List<Uri>() {
@@ -52,6 +55,12 @@ namespace Graduation_Create
             new Uri("Page10.xaml",UriKind.Relative),
             new Uri("Page11.xaml",UriKind.Relative),
             new Uri("Page12.xaml",UriKind.Relative),
+            new Uri("Page13.xaml",UriKind.Relative),
+            new Uri("Page14.xaml",UriKind.Relative),
+            new Uri("Page15.xaml",UriKind.Relative),
+            new Uri("Page16.xaml",UriKind.Relative),
+            new Uri("Page17.xaml",UriKind.Relative),
+
 
         };
 
@@ -60,11 +69,23 @@ namespace Graduation_Create
 
             int index = _uriList.FindIndex(p => p == _navi.CurrentSource) - 1;
             _navi.Navigate(_uriList[0]);    //ページの移動
+            _timer.Stop();
+            tbTime.Text = "00:00:00";
 
         }
 
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
+            _time = TimeSpan.FromSeconds(1);
+
+            _timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
+            {
+                tbTime.Text = _time.ToString("c");
+                if (_time == TimeSpan.Zero) _timer.Stop();
+                _time = _time.Add(TimeSpan.FromSeconds(1));
+            }, System.Windows.Application.Current.Dispatcher);
+
+            _timer.Start();
             if (_navi.CanGoForward)
                 _navi.GoForward();
             else
@@ -85,11 +106,12 @@ namespace Graduation_Create
                 Seikaibt.IsEnabled = false;
                 Matigai.IsEnabled = false;
             }
-            else if(index == 11){
+            else if(index == 16){
                 nextButton.IsEnabled = false;
                 prevButton.IsEnabled = true;
                 Seikaibt.IsEnabled = false;
                 Matigai.IsEnabled = false;
+                _timer.Stop();
             }
             else
             {
@@ -111,7 +133,6 @@ namespace Graduation_Create
 
         private void Seikaibt_Click(object sender, RoutedEventArgs e)
         {
-            scount = +1;
            
             if (_navi.CanGoForward)
                 _navi.GoForward();
@@ -125,7 +146,6 @@ namespace Graduation_Create
 
         private void Matigai_Click(object sender, RoutedEventArgs e)
         {
-            hcount = +1;
             if (_navi.CanGoForward)
                 _navi.GoForward();
             else
@@ -134,6 +154,16 @@ namespace Graduation_Create
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

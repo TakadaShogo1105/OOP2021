@@ -33,7 +33,7 @@
         <Button Content="24" HorizontalAlignment="Left" Margin="230,339,0,0" VerticalAlignment="Top" Width="75" Height="75"  Click="Button_Click"/>
         <Button Content="25" HorizontalAlignment="Left" Margin="305,339,0,0" VerticalAlignment="Top" Width="75" Height="75"  Click="Button_Click"/>
         <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="54" Margin="5,438,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="351"/>
-        <TextBox x:Name="tbTime" Height="53" Margin="5,492,438,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="00:00:00"/>
+        <TextBox x:Name="tbTime" Height="53" Margin="5,492,438,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="00:00:00" TextChanged="tbTime_TextChanged"/>
 
     </Grid>
 </Window>

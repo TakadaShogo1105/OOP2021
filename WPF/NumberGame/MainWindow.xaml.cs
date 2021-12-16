@@ -59,5 +59,10 @@ namespace NumberGame {
                 Answer.Text = "もっと小さいです";
             }
         }
+
+        private void tbTime_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
