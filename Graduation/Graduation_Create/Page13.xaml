@@ -10,7 +10,7 @@
 
     <Grid>
         <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鰯.png" Margin="-155,-79,-101,-87"/>
-        <Label Content="第十二問:『鰯』の読み方は『いわし』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="52" FontFamily="Segoe UI Black" Foreground="Black"/>
+        <Label Content="第十二問:『鰯』の読み方は『さば』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="52" FontFamily="Segoe UI Black" Foreground="Black"/>
         <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70" Foreground="Black"/>
     </Grid>
 </Page>

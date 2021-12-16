@@ -133,27 +133,211 @@ namespace Graduation_Create
 
         private void Seikaibt_Click(object sender, RoutedEventArgs e)
         {
-           
-            if (_navi.CanGoForward)
-                _navi.GoForward();
-            else
+            int indexs = _uriList.IndexOf(_navi.CurrentSource);
+            if (indexs == 1)
             {
                 MessageBox.Show("正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
-        }
-
-        private void Matigai_Click(object sender, RoutedEventArgs e)
-        {
-            if (_navi.CanGoForward)
-                _navi.GoForward();
-            else
+            else if (indexs == 2)
+            {
+               
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 3)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs ==4)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 5)
             {
                 MessageBox.Show("不正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
+            else if (indexs ==6)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 7)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 8)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 9)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 10)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 11)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 12)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 13)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 14)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 15)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+
+            //if (_navi.CanGoForward)
+            //    _navi.GoForward();
+            //else
+            //{
+            //    MessageBox.Show("正解！", "答え");
+            //    int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+            //    _navi.Navigate(_uriList[index]);    //ページの移動
+            //}
+        }
+
+        private void Matigai_Click(object sender, RoutedEventArgs e)
+        {
+            int indexs = _uriList.IndexOf(_navi.CurrentSource);
+            if (indexs == 1)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 2)
+            {
+
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 3)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 4)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 5)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 6)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 7)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 8)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 9)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 10)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 11)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 12)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 13)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 14)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 15)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            //if (_navi.CanGoForward)
+            //    _navi.GoForward();
+            //else
+            //{
+            //    MessageBox.Show("不正解！", "答え");
+            //    int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+            //    _navi.Navigate(_uriList[index]);    //ページの移動
+            //}
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
