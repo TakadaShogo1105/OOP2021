@@ -11,7 +11,6 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鯨.png" Margin="96,-123,-352,-43"/>
         <Label Content="第三問:『鯨』の読み方は『くじら』❓" HorizontalAlignment="Left" Margin="2,-34,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
 
     </Grid>
 </Page>

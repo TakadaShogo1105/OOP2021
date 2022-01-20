@@ -9,9 +9,8 @@
       Title="Page7">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="イカ.png" Margin="79,-138,-335,-28"/>
-        <Label Content="第六問:『蛸』の読み方は『いか』❓" HorizontalAlignment="Left" Margin="10,10,-8,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="133,252,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="415" VerticalAlignment="Top" Width="707" Source="イカ.png" Margin="132,-19,-39,0"/>
+        <Label Content="第六問:『蛸』の読み方は『いか』❓" HorizontalAlignment="Left" Margin="10,-19,-8,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="Black" />
 
     </Grid>
 </Page>

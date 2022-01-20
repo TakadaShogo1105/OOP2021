@@ -96,6 +96,7 @@ namespace Graduation_Create
 
         }
 
+
         private void myFrame_Navigated(object sender, NavigationEventArgs e)
         {
             int index = _uriList.IndexOf(_navi.CurrentSource);
@@ -133,12 +134,14 @@ namespace Graduation_Create
 
         private void Seikaibt_Click(object sender, RoutedEventArgs e)
         {
+
             int indexs = _uriList.IndexOf(_navi.CurrentSource);
             if (indexs == 1)
             {
                 MessageBox.Show("正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
+              
             }
             else if (indexs == 2)
             {
@@ -146,6 +149,7 @@ namespace Graduation_Create
                 MessageBox.Show("不正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
+              
             }
             else if (indexs == 3)
             {
@@ -244,6 +248,7 @@ namespace Graduation_Create
                 MessageBox.Show("不正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
+
             }
             else if (indexs == 2)
             {
@@ -251,6 +256,7 @@ namespace Graduation_Create
                 MessageBox.Show("正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
+                
             }
             else if (indexs == 3)
             {

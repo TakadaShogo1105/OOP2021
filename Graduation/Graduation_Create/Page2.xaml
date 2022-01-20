@@ -9,10 +9,18 @@
       Title="Page2">
 
     <Grid>
-        
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鮪2.png" Margin="10,-55,-266,-111"/>
-        <Label Content="第一問:『鮪』の読み方は『まぐろ』❓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70" />
+
+        <Image HorizontalAlignment="Left" Height="496" VerticalAlignment="Top" Width="916" Source="鮪2.png" Margin="100,-58,-216,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15.752"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="第一問:『鮪』の読み方は『まぐろ』❓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Margin="0,-20,0,0" />
 
     </Grid>
 </Page>

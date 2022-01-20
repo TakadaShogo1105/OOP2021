@@ -9,9 +9,8 @@
       Title="Page3">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="クマノミ.png" Margin="10,-54,-266,-112"/>
-        <Label Content="第二問:『鰘』の読み方は『クマノミ』❓" HorizontalAlignment="Left" Margin="0,-37,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="53" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
+        <Image HorizontalAlignment="Left" Height="460" VerticalAlignment="Top" Width="788" Source="クマノミ.png" Margin="34,-20,-22,0"/>
+        <Label Content="第二問:『鰘』の読み方は『クマノミ』❓" HorizontalAlignment="Left" Margin="0,-26,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="53" FontFamily="Segoe UI Black" />
 
     </Grid>
 </Page>

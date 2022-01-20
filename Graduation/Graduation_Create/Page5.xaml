@@ -9,9 +9,17 @@
       Title="Page5">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鮫.png" Margin="90,-139,-346,-27"/>
+        <Image HorizontalAlignment="Left" Height="532" VerticalAlignment="Top" Width="827" Source="鮫.png" Margin="118,-66,-145,-16" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.315"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <Label Content="第四問:『鮫』の読み方は『さめ』❓" HorizontalAlignment="Left" Margin="2,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
 
     </Grid>
 </Page>

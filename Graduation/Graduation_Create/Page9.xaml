@@ -9,8 +9,16 @@
       Title="Page9">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鼈.png" Margin="0,0,-256,-166"/>
+        <Image HorizontalAlignment="Left" Height="478" VerticalAlignment="Top" Width="874" Source="鼈.png" Margin="100,-26,-174,-2" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15.973"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <Label Content="第八問:『鼈』の読み方は『すっぽん』❓" HorizontalAlignment="Left" Margin="0,-12,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="110,160,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
     </Grid>
 </Page>

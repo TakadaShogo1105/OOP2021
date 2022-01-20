@@ -11,6 +11,5 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鰌.png" Margin="73,-134,-329,-32"/>
         <Label Content="第九問:『鰌』の読み方は『どじょう』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="52" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
     </Grid>
 </Page>

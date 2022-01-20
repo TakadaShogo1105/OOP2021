@@ -5,26 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sotugyo02"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="452" Width="811">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="32"/>
+            <RowDefinition/>
+            <RowDefinition Height="0"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Background="MediumTurquoise">
             <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" 
                        Foreground="White"/>
         </StackPanel>
-        <Frame Grid.Row="1" NavigationUIVisibility="Hidden" Name="myFrame" Loaded="myFrame_Loaded" Navigated="myFrame_Navigated" Background="MediumTurquoise"/>
-        <StackPanel Orientation="Horizontal" Background="MediumTurquoise" Grid.Row="2">
+        <Frame Grid.Row="1" NavigationUIVisibility="Hidden" Name="myFrame" Loaded="myFrame_Loaded" Navigated="myFrame_Navigated" Background="MediumTurquoise" Margin="0,0,0,-74" Grid.RowSpan="2"/>
+        <StackPanel Orientation="Horizontal" Background="MediumTurquoise" Grid.Row="1" Margin="0,322,0,-10" Grid.RowSpan="2">
             <Button Name="prevButton" Content="Back" HorizontalAlignment="Left" Background="SlateBlue"
-                    Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center"
-                    Width="50" Click="prevButton_Click" />
+                    Margin="10,6,0,6" Grid.Row="2" VerticalAlignment="Center"
+                    Width="50" Click="prevButton_Click" Height="65" />
             <Button Name="nextButton" Content="Start" HorizontalAlignment="Left" Background="Yellow" Width="50" Click="nextButton_Click" Margin="0,6"  />
-            <Button Name="Seikaibt" Content="○" Width="75" Margin="0,6" Background="LightGreen" Click="Seikaibt_Click"/>
-            <Button x:Name="Matigai" Content="✕" Width="75" Margin="0,6" Background="Red" Click="Matigai_Click"/>
-            <TextBox x:Name="tbTime" TextWrapping="Wrap" Text="00:00:00" Width="56" TextChanged="TextBox_TextChanged_1" Margin="0,6"/>
+            <TextBox x:Name="tbTime" TextWrapping="Wrap" Text="00:00:00" Width="52" TextChanged="TextBox_TextChanged_1" Margin="0,6" TextAlignment="Center"/>
+            <Button Name="Seikaibt" Content="○" Width="300" Margin="0,6" Background="LightGreen" Click="Seikaibt_Click" FontSize="50" FontFamily="Cooper Black"/>
+            <Button x:Name="Matigai" Content="✕" Width="300" Margin="0,6" Background="Red" Click="Matigai_Click" FontSize="50" FontFamily="Cooper Black"/>
+
         </StackPanel>
     </Grid>
 </Window>

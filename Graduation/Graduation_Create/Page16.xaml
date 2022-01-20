@@ -9,8 +9,7 @@
       Title="Page16">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鱘.png" Margin="-60,-83,-196,-83"/>
+        <Image HorizontalAlignment="Left" Height="523" VerticalAlignment="Top" Width="809" Source="鱘.png" Margin="-19,-55,0,-18"/>
         <Label Content="第十五問:『鱘』の読み方は『ちょうざめ』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="47" FontFamily="Segoe UI Black" />
-        <Label Content="○か✕をクリック" HorizontalAlignment="Left" Margin="107,249,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="70"/>
     </Grid>
 </Page>
