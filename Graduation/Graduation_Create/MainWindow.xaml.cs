@@ -60,7 +60,11 @@ namespace Graduation_Create
             new Uri("Page15.xaml",UriKind.Relative),
             new Uri("Page16.xaml",UriKind.Relative),
             new Uri("Page17.xaml",UriKind.Relative),
-
+            new Uri("Page18.xaml",UriKind.Relative),
+            new Uri("Page19.xaml",UriKind.Relative),
+            new Uri("Page20.xaml",UriKind.Relative),
+            new Uri("Page21.xaml",UriKind.Relative),
+            new Uri("Page22.xaml",UriKind.Relative),
 
         };
 
@@ -107,7 +111,7 @@ namespace Graduation_Create
                 Seikaibt.IsEnabled = false;
                 Matigai.IsEnabled = false;
             }
-            else if(index == 16){
+            else if(index == 21){
                 nextButton.IsEnabled = false;
                 prevButton.IsEnabled = true;
                 Seikaibt.IsEnabled = false;
@@ -229,7 +233,36 @@ namespace Graduation_Create
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
-
+            else if (indexs == 16)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 17)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 18)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 19)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 20)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
             //if (_navi.CanGoForward)
             //    _navi.GoForward();
             //else
@@ -331,6 +364,36 @@ namespace Graduation_Create
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
             else if (indexs == 15)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 16)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 17)
+            {
+                MessageBox.Show("正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 18)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 19)
+            {
+                MessageBox.Show("不正解！", "答え");
+                int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
+                _navi.Navigate(_uriList[index]);    //ページの移動
+            }
+            else if (indexs == 20)
             {
                 MessageBox.Show("不正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;

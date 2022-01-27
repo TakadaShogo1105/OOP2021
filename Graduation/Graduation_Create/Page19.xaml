@@ -1,24 +1,25 @@
-﻿<Page x:Class="Sotugyo02.Page9"
+﻿<Page x:Class="Graduation_Create.Page19"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Sotugyo02"
+      xmlns:local="clr-namespace:Graduation_Create"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page9">
+      Title="Page19">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="478" VerticalAlignment="Top" Width="874" Source="鼈.png" Margin="100,-26,-174,-2" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="424" VerticalAlignment="Top" Width="1022" Source="ahihi.png" Margin="74,4,-296,0" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-15.973"/>
+                    <RotateTransform Angle="0.586"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label Content="第八問:『鼈』の読み方は『すっぽん』❓" HorizontalAlignment="Left" Margin="0,-12,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="52" FontFamily="Segoe UI Black" />
+        <Label Content="第十八問:『家鴨』の読み方は『あひる』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="48" FontFamily="Segoe UI Black" />
+
     </Grid>
 </Page>

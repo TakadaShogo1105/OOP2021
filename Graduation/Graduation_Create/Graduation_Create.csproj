@@ -103,9 +103,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Page18.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page19.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Page2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Page20.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page21.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page22.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page3.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -164,8 +184,23 @@
     <Compile Include="Page17.xaml.cs">
       <DependentUpon>Page17.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page18.xaml.cs">
+      <DependentUpon>Page18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page19.xaml.cs">
+      <DependentUpon>Page19.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page20.xaml.cs">
+      <DependentUpon>Page20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page21.xaml.cs">
+      <DependentUpon>Page21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page22.xaml.cs">
+      <DependentUpon>Page22.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
@@ -319,6 +354,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="くりおお.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hati.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="suzu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ahi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ahihi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kamo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hato.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

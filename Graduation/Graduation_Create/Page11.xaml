@@ -9,7 +9,7 @@
       Title="Page11">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="393" VerticalAlignment="Top" Width="720" Source="クリオネ.png" Margin="139,47,-59,0"/>
+        <Image HorizontalAlignment="Left" Height="393" VerticalAlignment="Top" Width="720" Source="クリオネ.png" Margin="187,47,-107,0"/>
         <Label Content="第十問:『妖尾禰』の読み方は『くりおね』❓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="172" Width="798" FontSize="46" FontFamily="Segoe UI Black" Margin="-8,-20,0,0" />
     </Grid>
 </Page>

@@ -1,0 +1,16 @@
+﻿<Page x:Class="Graduation_Create.Page22"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Graduation_Create"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page22">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="498" VerticalAlignment="Top" Width="818" Source="あおpng.png" Margin="96,-20,-114,-28"/>
+        <Label Content="Quiz End" HorizontalAlignment="Left" Margin="164,-20,-162,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="100" FontFamily="Segoe UI Black" />
+        <Label Content="see you" HorizontalAlignment="Left" Margin="164,152,-162,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="100" FontFamily="Segoe UI Black" />
+    </Grid>
+</Page>
