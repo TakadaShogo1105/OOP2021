@@ -9,7 +9,7 @@
       Title="Page8">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="506" VerticalAlignment="Top" Width="863" Source="鰒.png" Margin="57,-56,-120,0"/>
-        <Label Content="第七問:『鰒』の読み方は『ふぐ』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="506" VerticalAlignment="Top" Width="863" Source="鰒.png" Margin="91,-56,-154,0"/>
+        <Label Content="第七問:『鰒』の読み方は『ふぐ』❓" HorizontalAlignment="Left" Margin="26,-22,-24,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="Black"/>
     </Grid>
 </Page>

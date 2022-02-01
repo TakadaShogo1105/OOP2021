@@ -9,7 +9,7 @@
       Title="Page3">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="460" VerticalAlignment="Top" Width="788" Source="クマノミ.png" Margin="34,-20,-22,0"/>
+        <Image HorizontalAlignment="Left" Height="460" VerticalAlignment="Top" Width="788" Source="クマノミ.png" Margin="89,-20,-77,0"/>
         <Label Content="第二問:『鰘』の読み方は『クマノミ』❓" HorizontalAlignment="Left" Margin="0,-26,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="53" FontFamily="Segoe UI Black" />
 
     </Grid>

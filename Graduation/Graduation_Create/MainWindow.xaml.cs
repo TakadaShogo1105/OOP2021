@@ -17,9 +17,7 @@ using Microsoft.Office.Interop.Excel;
 
 namespace Graduation_Create
 {
-    /// <summary>
-    /// MainWindow.xaml の相互作用ロジック
-    /// </summary>
+    
     public partial class MainWindow : System.Windows.Window
     {
 
@@ -33,12 +31,9 @@ namespace Graduation_Create
 
         }
 
-
         private void myFrame_Loaded(object sender, RoutedEventArgs e)
         {
-
             _navi.Navigate(_uriList[0]);    //初期ページの表示
-            
             
         }
 
@@ -126,14 +121,6 @@ namespace Graduation_Create
                 Matigai.IsEnabled = true;
             }
 
-            //if (index + 1 == _uriList.Count)
-            //{
-            //    nextButton.IsEnabled = false;
-            //}
-            //else
-            //{
-            //    nextButton.IsEnabled = true;
-            //}
         }
 
         private void Seikaibt_Click(object sender, RoutedEventArgs e)
@@ -142,10 +129,11 @@ namespace Graduation_Create
             int indexs = _uriList.IndexOf(_navi.CurrentSource);
             if (indexs == 1)
             {
+                
                 MessageBox.Show("正解！", "答え");
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
-              
+                
             }
             else if (indexs == 2)
             {
@@ -263,14 +251,7 @@ namespace Graduation_Create
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
-            //if (_navi.CanGoForward)
-            //    _navi.GoForward();
-            //else
-            //{
-            //    MessageBox.Show("正解！", "答え");
-            //    int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
-            //    _navi.Navigate(_uriList[index]);    //ページの移動
-            //}
+           
         }
 
         private void Matigai_Click(object sender, RoutedEventArgs e)
@@ -399,14 +380,7 @@ namespace Graduation_Create
                 int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
                 _navi.Navigate(_uriList[index]);    //ページの移動
             }
-            //if (_navi.CanGoForward)
-            //    _navi.GoForward();
-            //else
-            //{
-            //    MessageBox.Show("不正解！", "答え");
-            //    int index = _uriList.FindIndex(p => p == _navi.CurrentSource) + 1;
-            //    _navi.Navigate(_uriList[index]);    //ページの移動
-            //}
+          
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

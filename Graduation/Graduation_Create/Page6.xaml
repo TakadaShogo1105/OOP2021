@@ -9,7 +9,7 @@
       Title="Page6">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="527" VerticalAlignment="Top" Width="860" Source="kkrr.png" Margin="76,-60,-136,-17"/>
+        <Image HorizontalAlignment="Left" Height="527" VerticalAlignment="Top" Width="860" Source="kkrr.png" Margin="98,-62,-158,-15"/>
         <Label Content="第五問:『鯔』の読み方は『くらげ』❓" HorizontalAlignment="Left" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Margin="0,-24,0,0" />
 
     </Grid>

@@ -9,7 +9,7 @@
       Title="Page13">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鯖.png" Margin="56,-134,-312,-32"/>
+        <Image HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="1056" Source="鯖.png" Margin="83,-138,-339,-28"/>
         <Label Content="第十二問:『鰯』の読み方は『さば』❓" HorizontalAlignment="Left" Margin="0,-22,0,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="52" FontFamily="Segoe UI Black" Foreground="Black"/>
     </Grid>
 </Page>

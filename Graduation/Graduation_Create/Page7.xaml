@@ -9,7 +9,7 @@
       Title="Page7">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="415" VerticalAlignment="Top" Width="707" Source="イカ.png" Margin="132,-19,-39,0"/>
+        <Image HorizontalAlignment="Left" Height="415" VerticalAlignment="Top" Width="707" Source="イカ.png" Margin="160,-19,-67,0"/>
         <Label Content="第六問:『蛸』の読み方は『いか』❓" HorizontalAlignment="Left" Margin="10,-19,-8,0" VerticalAlignment="Top" Height="172" Width="798" FontSize="55" FontFamily="Segoe UI Black" Foreground="Black" />
 
     </Grid>

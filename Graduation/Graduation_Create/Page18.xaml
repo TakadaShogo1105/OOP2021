@@ -9,8 +9,8 @@
       Title="Page18">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="535" VerticalAlignment="Top" Width="886" Source="suzu.png" Margin="79,-39,-165,-46"/>
-        <Label Content="第十七問:『孔雀』の読み方は『すずめ』❓" HorizontalAlignment="Left" Margin="-8,0,0,0" VerticalAlignment="Top" Height="159" Width="808" FontSize="48" FontFamily="Segoe UI Black" />
+        <Image HorizontalAlignment="Left" Height="596" VerticalAlignment="Top" Width="954" Source="suzu.png" Margin="41,-61,-195,-85"/>
+        <Label Content="第十七問:『孔雀』の読み方は『すずめ』❓" HorizontalAlignment="Left" Margin="0,10,-8,0" VerticalAlignment="Top" Height="159" Width="808" FontSize="47" FontFamily="Segoe UI Black" />
 
     </Grid>
 </Page>
